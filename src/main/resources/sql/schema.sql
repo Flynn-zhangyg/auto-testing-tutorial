@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS `test`.`user`(
+   `id` VARCHAR(20),
+   `name` VARCHAR(40) NOT NULL,
+   PRIMARY KEY ( `id` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;

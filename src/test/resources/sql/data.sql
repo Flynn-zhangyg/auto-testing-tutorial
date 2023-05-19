@@ -1,0 +1,1 @@
+replace into test.user(id, name) values ("1", "Bob");

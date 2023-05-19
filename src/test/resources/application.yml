@@ -1,0 +1,21 @@
+spring:
+  sql:
+    init:
+      mode: always
+      schemaLocations:
+        - classpath:sql/schema.sql
+      data-locations:
+        - classpath:sql/data.sql
+  kafka:
+    producer:
+      valueSerializer: org.springframework.kafka.support.serializer.JsonSerializer
+      valueDeserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+    consumer:
+      groupId: test
+      auto-offset-reset: earliest
+      valueDeserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: "*"
