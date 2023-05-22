@@ -3,6 +3,7 @@ package io.github.flynn.auto.testing.tutorial.models;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 import org.springframework.data.annotation.Id;
@@ -14,6 +15,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Jacksonized
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
 public class User {
 
   @Id
