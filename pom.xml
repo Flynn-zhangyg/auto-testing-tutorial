@@ -8,15 +8,15 @@
 
     <parent>
         <groupId>io.github.flynn-zhangyg</groupId>
-        <artifactId>polaris</artifactId>
-        <version>0.0.2</version>
+        <artifactId>polaris-spring</artifactId>
+        <version>0.0.7</version>
     </parent>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <polaris.version>0.0.2</polaris.version>
+        <polaris.version>0.0.7</polaris.version>
     </properties>
 
     <dependencies>
@@ -93,7 +93,7 @@
         <dependencies>
             <dependency>
                 <groupId>io.github.flynn-zhangyg</groupId>
-                <artifactId>polaris</artifactId>
+                <artifactId>polaris-spring</artifactId>
                 <version>${polaris.version}</version>
             </dependency>
         </dependencies>
